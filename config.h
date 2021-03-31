@@ -5,8 +5,9 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "UbuntuMono NF:size=10:style=Bold";
-static char *font2[] = { "UbuntuMono NF:size=10:style=Bold" };
+    
+static char *font = "UbuntuMono Nerd Font:size=12:style=Bold";
+static char *font2[] = { "UbuntuMono Nerd Font:size=12:style=Bold" };
 static int borderpx = 2;
 
 /*
@@ -108,7 +109,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.8;
+float alpha = 1;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
