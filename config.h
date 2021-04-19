@@ -6,8 +6,8 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
     
-static char *font = "UbuntuMono Nerd Font:size=12:style=Bold";
-static char *font2[] = { "UbuntuMono Nerd Font:size=12:style=Bold" };
+static char *font = "Hack Nerd Font:size=10:style=Bold";
+static char *font2[] = { "Hack Nerd Font:size=10:style=Bold" };
 static int borderpx = 2;
 
 /*
@@ -155,7 +155,7 @@ unsigned int defaultrcs = 257;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorshape = 6;
 
 /*
  * Default columns and rows numbers
@@ -243,7 +243,7 @@ MouseKey mkeys[] = {
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
 	{ MODKEY,               XK_plus,        zoom,           {.f = +1} },
-  { MODKEY,               XK_minus,       zoom,           {.f = -1} },
+    { MODKEY,               XK_minus,       zoom,           {.f = -1} },
 	{ MODKEY,               XK_0,           zoomreset,      {.f =  0} },
 	{ MODKEY,               XK_c,           clipcopy,       {.i =  0} },
 	{ MODKEY,               XK_v,           clippaste,      {.i =  0} },
@@ -251,8 +251,7 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,               XK_j,           kscrolldown,    {.i =  3} },
 	{ MODKEY,               XK_Up,          kscrollup,      {.i =  3} },
 	{ MODKEY,               XK_Down,        kscrolldown,    {.i =  3} },
-	{ TERMMOD,              XK_o,           externalpipe,   {.v = openurlcmd } },
-	{ MODKEY,               XK_o,           externalpipe,   {.v = copyoutput } },
+	{ TERMMOD,              XK_o,           externalpipe,   {.v = openurlcmd } }
 };
 
 /*
