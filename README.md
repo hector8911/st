@@ -10,7 +10,7 @@
 
 ## Installation
 ```
-git clone https://github.com/LukeSmithxyz/st
+gh repo clone hector8911/st
 cd st
 sudo make install
 ```
